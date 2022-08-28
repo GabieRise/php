@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#formDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+form > section{ 
+    padding: 20px 0px 10px 0px;
+    width: 30%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius:10px ;
+
+}
+
+form > section> *{
+    width: 80%;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+    border: 0;
+}
+input:focus{
+    border: 0;
+    outline: 0;
+}
+#personalInfo > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#personalInfo > div >input[type="number"]{
+    margin-left: 0;
+}
+input[type="radio"]{
+    box-shadow: 0px 0px;
+}
+
+ button{
+    width: 60px;
+    display: inline-block;
+    background-color: white;
+    margin-top: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color:white
+}
+
+button:active{
+    transform: scale(0.9) ;
+}
+
+#healthInfo, #educationalInfo{
+    display: none;
+}

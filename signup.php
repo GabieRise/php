@@ -8,47 +8,31 @@
     <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
-    <form action="signin.php" method="POST" id="formDiv">
+    <form action="index.php" method="POST" id="formDiv">
         <section id="personalInfo">
             <h2>Personal Info</h2>
+            <input required id="fName" name="firstName" type="text" placeholder="First Name">
+            <input required id="lName" name="lastName" type="text" placeholder="Last Name">
             <input required id="email" name="email" type="email" placeholder="Email">
             <input required id="password" name="password" type="password" placeholder="Password">
-        
+         
             <div>
-                <button name="btn">Submit</button>
+                <input required id="age" name="age" type="number" placeholder="Age">
+                <span><input required id=""type="radio" name="gender" value="female"> Female</span>
+                <span><input required id=""type="radio" name="gender" value="male"> Male</span>
+            </div>
+            <div>
+                <button name="btn">login</button>
             </div>
         </section>
     </form>
 
     <?php 
 
-        $users =[
-            ["email"=>"hafsahchukwuma@yahoo.com", "password" => "4t8924tyi4ejhguighuihgui"],
-            ["email" => "jamesdoe@gmail.com", "password" => "uj34yui34u2yfugy78y43jgi43jh"]
-        ];
-
-        define("dbEmail","hafsahchukwuma@yahoo.com", true);
-        define("dbPassword", "4uirwhy784yu487yt5ug3uht894y", true);
-
-        if(isset($_POST['btn'])){
-            if($_POST["email"] === dbEmail && $_POST["password"] === dbpassword){
-                echo"Hi";
-            }
-            else{
-                echo"Go Away";
-            }
-        };
-
-        function userExists( $email, $password){
-            
-            for($i=0; i<count($users); $i++){
-                if($users[$i]["email"] === $email && $users[$i]["password"]===$password){
-                    echo "found";
-                    break;
-                }
-            }
-        }
+    if(isset($_POST["btn"])){
+        echo($_POST["firstName"]);
+        echo($_POST["email"]);
+    }
     ?>
-    
 </body>
 </html>

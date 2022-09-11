@@ -1,0 +1,54 @@
+.container {
+    background-color: white;
+    width: 70vw;
+    height: 80vh;
+    margin: 70px auto 
+    
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+
+}
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th {
+    font-size: 1.1em;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(41, 23, 2);
+    color: white;
+}
+th, td {
+    width: 170px;
+    height:35px;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+    padding: 5px;
+
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    align-items: right;
+    background-color: rgb(41, 23, 2);
+    color: aliceblue;
+    height: 45px;
+    width: 100px;
+    margin-top: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 400ms ease-out;
+}
+button:hover{
+    box-shadow: 3px 3px 3px rgba(41, 23, 2, 0.726), -2px -2px 3px rgba(41, 23, 2, 0.726); 
+}
+button:active{
+        transform: scale(0.8,0.8);
+
+}
